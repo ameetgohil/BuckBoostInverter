@@ -252,7 +252,6 @@ Wire Wire Line
 Connection ~ 3600 4550
 Wire Wire Line
 	3600 4550 3750 4550
-NoConn ~ 5100 4200
 $Comp
 L Device:C C9
 U 1 1 5CAED2AC
@@ -545,7 +544,7 @@ U 1 1 5CB3D397
 P 950 2600
 F 0 "J1" H 1056 2778 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 1056 2687 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 950 2600 50  0001 C CNN
+F 2 "project_lib:PowerPads" H 950 2600 50  0001 C CNN
 F 3 "~" H 950 2600 50  0001 C CNN
 	1    950  2600
 	1    0    0    -1  
@@ -609,7 +608,7 @@ U 1 1 5CB43060
 P 9850 3750
 F 0 "J2" H 9823 3630 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 9823 3721 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9850 3750 50  0001 C CNN
+F 2 "project_lib:PowerPads" H 9850 3750 50  0001 C CNN
 F 3 "~" H 9850 3750 50  0001 C CNN
 	1    9850 3750
 	-1   0    0    1   
@@ -624,4 +623,16 @@ Wire Wire Line
 Wire Wire Line
 	9650 4700 9650 3750
 Connection ~ 8750 4700
+Connection ~ 9650 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5CB0B4BB
+P 5100 4200
+F 0 "#PWR?" H 5100 3950 50  0001 C CNN
+F 1 "GND" H 5105 4027 50  0000 C CNN
+F 2 "" H 5100 4200 50  0001 C CNN
+F 3 "" H 5100 4200 50  0001 C CNN
+	1    5100 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
